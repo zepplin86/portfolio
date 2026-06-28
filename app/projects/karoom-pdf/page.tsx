@@ -128,7 +128,7 @@ export default function KaroomPdfPage() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white">
       <header className="border-b border-white/5 px-6 py-4">
-        <Link href="/#projects" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors">
+        <Link href="/projects" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors">
           <ArrowLeft size={16} />
           포트폴리오로 돌아가기
         </Link>

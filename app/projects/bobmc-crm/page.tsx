@@ -59,7 +59,7 @@ export default function BobmcCrmPage() {
       {/* Header */}
       <header className="border-b border-white/5 px-6 py-4">
         <Link
-          href="/#projects"
+          href="/projects"
           className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors"
         >
           <ArrowLeft size={16} />

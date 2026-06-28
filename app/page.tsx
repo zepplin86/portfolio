@@ -13,8 +13,8 @@ export default function Home() {
       <main>
         <Hero />
         <Skills />
-        <Experience />
-        <Projects />
+        <Experience viewAllHref="/career" />
+        <Projects featured viewAllHref="/projects" />
         <Contact />
       </main>
       <Footer />

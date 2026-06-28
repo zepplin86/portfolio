@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Jaeyoung Park | Frontend Developer",
@@ -13,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className="h-full">
+    <html lang="ko" className={`h-full ${jetbrainsMono.variable}`}>
       <body className="min-h-full antialiased">
         <LanguageProvider>{children}</LanguageProvider>
       </body>

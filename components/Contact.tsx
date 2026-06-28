@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./icons";
+import { GithubIcon } from "./icons";
 import { SectionTitle } from "./Skills";
 import { useState } from "react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -53,7 +53,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://github.com/jaeyoungpark"
+                href="https://github.com/zepplin86"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group"
@@ -61,19 +61,7 @@ export default function Contact() {
                 <span className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-purple-600/20 transition-colors">
                   <GithubIcon size={18} />
                 </span>
-                <span className="text-sm">github.com/jaeyoungpark</span>
-              </a>
-
-              <a
-                href="https://linkedin.com/in/jaeyoungpark"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group"
-              >
-                <span className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-purple-600/20 transition-colors">
-                  <LinkedinIcon size={18} />
-                </span>
-                <span className="text-sm">linkedin.com/in/jaeyoungpark</span>
+                <span className="text-sm">github.com/zepplin86</span>
               </a>
             </div>
           </motion.div>

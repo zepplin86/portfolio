@@ -7,7 +7,7 @@ const skillCategories = [
   {
     title: "Frontend",
     color: "from-purple-500 to-purple-700",
-    skills: ["React.js", "React Native", "Vue.js", "Nuxt.js", "Next.js", "JavaScript", "HTML/CSS"],
+    skills: ["React.js", "React Native", "Vue.js", "Nuxt.js", "Next.js", "JavaScript", "TypeScript", "HTML/CSS"],
   },
   {
     title: "Backend",
@@ -22,7 +22,7 @@ const skillCategories = [
   {
     title: "Tools & Others",
     color: "from-emerald-500 to-emerald-700",
-    skills: ["TensorFlow", "Git", "CentOS", "jQuery", "Ajax"],
+    skills: ["TensorFlow", "Git", "Docker", "CentOS", "Ubuntu", "jQuery", "Ajax"],
   },
 ];
 

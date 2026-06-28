@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Mail, ArrowDown } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./icons";
+import { GithubIcon } from "./icons";
 import { useLang } from "@/contexts/LanguageContext";
+import TerminalIntro from "./TerminalIntro";
 
 export default function Hero() {
   const { t } = useLang();
@@ -17,32 +18,14 @@ export default function Hero() {
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-sm text-gray-500 tracking-widest uppercase mb-6"
+          transition={{ duration: 0.6 }}
+          className="mb-10"
         >
-          {t.hero.greeting}
-        </motion.p>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-6xl md:text-8xl font-bold mb-4 glow"
-        >
-          <span className="gradient-text">{t.hero.name}</span>
-        </motion.h1>
-
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-2xl md:text-3xl font-light text-gray-300 mb-8"
-        >
-          {t.hero.title}
-        </motion.h2>
+          <TerminalIntro />
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -80,20 +63,12 @@ export default function Hero() {
           className="flex items-center justify-center gap-6"
         >
           <a
-            href="https://github.com/jaeyoungpark"
+            href="https://github.com/zepplin86"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-white transition-colors"
           >
             <GithubIcon size={22} />
-          </a>
-          <a
-            href="https://linkedin.com/in/jaeyoungpark"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-white transition-colors"
-          >
-            <LinkedinIcon size={22} />
           </a>
           <a
             href="mailto:zepplin86@naver.com"

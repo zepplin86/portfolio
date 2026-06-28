@@ -33,11 +33,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: t.nav.about, href: "#about" },
-    { label: t.nav.skills, href: "#skills" },
-    { label: t.nav.experience, href: "#experience" },
-    { label: t.nav.projects, href: "#projects" },
-    { label: t.nav.contact, href: "#contact" },
+    { label: t.nav.about, href: "/" },
+    { label: t.nav.skills, href: "/#skills" },
+    { label: t.nav.experience, href: "/career" },
+    { label: t.nav.projects, href: "/projects" },
+    { label: t.nav.contact, href: "/#contact" },
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <span className="gradient-text font-bold text-xl tracking-wider">JY.</span>
+        <a href="/" className="gradient-text font-bold text-xl tracking-wider">JY.</a>
 
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -94,7 +94,7 @@ export default function Navbar() {
             )}
           </div>
           <a
-            href="#contact"
+            href="/#contact"
             className="text-sm px-4 py-2 rounded-full gradient-bg text-white font-medium hover:opacity-90 transition-opacity"
           >
             {t.nav.cta}
