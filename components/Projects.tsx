@@ -27,10 +27,10 @@ const cardStyles = [
 
 // 임팩트 순위 / 대표 지정 — translations 의 items 원본 인덱스 기준 (EN·KO 동일 순서)
 // 0 bobmc-crm, 1 karoom-pdf, 2 payment, 3 google-i18n, 4 category-tree,
-// 5 docker-env, 6 file-live, 7 cicd, 8 nginx-cache
-// 순위: 1 nginx-cache, 2 category-tree, 3 payment, 4 cicd, 5 docker-env, 6 google-i18n, 7 file-live, 8 bobmc-crm, 9 karoom-pdf
-const IMPACT = [8, 9, 3, 6, 2, 5, 7, 4, 1];
-const FEATURED = new Set([2, 4, 7, 8]);
+// 5 docker-env, 6 file-live, 7 cicd, 8 nginx-cache, 9 vod-migration
+// 순위: 0 vod-migration(대표), 1 nginx-cache, 2 category-tree, 3 payment, 4 cicd, 5 docker-env, 6 google-i18n, 7 file-live, 8 bobmc-crm, 9 karoom-pdf
+const IMPACT = [8, 9, 3, 6, 2, 5, 7, 4, 1, 0];
+const FEATURED = new Set([2, 4, 8, 9]);
 
 export default function Projects({
   featured = false,

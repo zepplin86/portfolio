@@ -41,7 +41,14 @@ export default function Experience({
                 />
 
                 <div className={`card transition-colors duration-300 ${compact ? "p-4" : "p-6"}`}>
-                  <span className="text-xs text-gray-500 font-mono">{exp.period}</span>
+                  <div className={`flex items-center gap-2 flex-wrap ${i % 2 === 0 ? "md:justify-end" : ""}`}>
+                    <span className="text-xs text-gray-500 font-mono">{exp.period}</span>
+                    {"tag" in exp && exp.tag && (
+                      <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">
+                        {exp.tag}
+                      </span>
+                    )}
+                  </div>
                   <h3 className={`font-bold text-white mt-1 ${compact ? "text-base" : "text-lg"}`}>{exp.role}</h3>
                   <p className="text-purple-400 text-sm font-medium mb-2">{exp.company}</p>
 

@@ -32,7 +32,14 @@ export default function CareerDetail() {
               >
                 {/* ── LEFT: 업무 서술 ── */}
                 <div className="flex-1 min-w-0">
-                  <span className="text-xs text-gray-500 font-mono">{exp.period}</span>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="text-xs text-gray-500 font-mono">{exp.period}</span>
+                    {"tag" in exp && exp.tag && (
+                      <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">
+                        {exp.tag}
+                      </span>
+                    )}
+                  </div>
                   <h3 className="text-xl font-bold text-white mt-1">{exp.role}</h3>
                   <p className="text-purple-400 text-sm font-medium mb-4">{exp.company}</p>
 
