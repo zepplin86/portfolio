@@ -48,8 +48,10 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" className="gradient-text font-bold text-xl tracking-wider">JY.</a>
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center gap-4">
+        <div className="flex-1 flex items-center">
+          <a href="/" className="gradient-text font-bold text-xl tracking-wider">JY.</a>
+        </div>
 
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -64,6 +66,7 @@ export default function Navbar() {
           ))}
         </ul>
 
+        <div className="flex-1 flex items-center justify-end gap-3">
         <div className="hidden md:flex items-center gap-3">
           <div ref={langRef} className="relative">
             <button
@@ -140,6 +143,7 @@ export default function Navbar() {
               <span className={`block h-0.5 bg-current transition-all ${menuOpen ? "-rotate-45 -translate-y-1.5" : ""}`} />
             </div>
           </button>
+        </div>
         </div>
       </div>
 
