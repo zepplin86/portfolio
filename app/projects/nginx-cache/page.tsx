@@ -344,10 +344,17 @@ export default function NginxCachePage() {
                 물리 파일시스템 의존이 사라져 <strong className="text-gray-200">k8s에서 캐시 노드를 수평 확장</strong>할 수 있고, 운영 인프라를 컨테이너로 통일했습니다.
               </Section>
 
+              <Section title="안정성 검증 — 실 트래픽 리플레이">
+                새 캐시 서버가 실제 트래픽에서도 문제없이 동작하는지 확인하기 위해 <strong className="text-gray-200">별도의 테스트 도구를 직접 만들었습니다</strong>.
+                운영 환경의 nginx <code className="text-purple-300 bg-purple-900/30 px-1 rounded">access.log</code>는 이미 Kafka로 수집되고 있었는데,
+                이 Kafka를 구독해 <strong className="text-gray-200">실제로 들어온 GET 요청을 그대로 새 nginx + Lua 환경으로 재생</strong>했습니다.
+                인위적인 부하 테스트가 아니라 <strong className="text-gray-200">실제 사용 패턴과 동일한 요청</strong>으로, 새 구조가 프로덕션과 같게 응답하는지 배포 전에 검증할 수 있었습니다.
+              </Section>
+
               <div className="pt-2 border-t border-white/5">
                 <p className="text-xs text-gray-600 mb-2 uppercase tracking-wider">Tech</p>
                 <div className="flex flex-wrap gap-2">
-                  {["Nginx", "Lua / OpenResty", "lua-resty-http", "proxy_cache", "slice module", "Kubernetes"].map((t) => (
+                  {["Nginx", "Lua / OpenResty", "lua-resty-http", "proxy_cache", "slice module", "Kubernetes", "Kafka"].map((t) => (
                     <span key={t} className="text-xs px-2 py-1 rounded bg-white/5 text-gray-400">{t}</span>
                   ))}
                 </div>
