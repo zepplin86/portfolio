@@ -521,7 +521,7 @@ export default function GoogleI18nPage() {
             <div className="card p-5 flex flex-col gap-5 text-sm text-gray-400 leading-relaxed">
 
               <Section title="핵심 결론">
-                번역을 코드에서 완전히 분리해 <strong className="text-gray-200">Google Sheets를 단일 진실 공급원(SSOT)</strong>으로 만들었습니다.
+                번역을 코드에서 분리해 <strong className="text-gray-200">Google Sheets에서 관리</strong>하도록 만들었습니다.
                 이제 <code className="text-purple-300 bg-purple-900/30 px-1 rounded">npm run i18n</code> 한 번이면 시트가 곧바로 ko/en/ja 번역 파일로 자동 생성됩니다.
                 수기로 옮겨 적던 작업이 사라져 <strong className="text-gray-200">이관 실수가 0이 되었고</strong>, 개발자가 아닌 기획·번역 담당자도 시트만 고치면 용어를 직접 관리할 수 있게 됐습니다.
               </Section>

@@ -152,7 +152,7 @@ export const translations = {
         {
           title: "Google Sheets i18n Automation",
           description:
-            "Auto-generates i18n translation files from a Google Spreadsheet. Built a reusable I18nBuilderFromSheets module that authenticates via a service account, deep-merges dotted keys into nested objects, converts :params to {params}, and writes per-language files — turning the sheet into a single source of truth.",
+            "Auto-generates i18n translation files from a Google Spreadsheet. Built a reusable I18nBuilderFromSheets module that authenticates via a service account, deep-merges dotted keys into nested objects, converts :params to {params}, and writes per-language files — so all translations are managed in the sheet.",
           tech: ["Google Sheets API", "Node.js", "Vue CLI", "PHP Laravel", "lodash"],
           detailLink: "/projects/google-i18n",
         },
@@ -370,7 +370,7 @@ export const translations = {
         {
           title: "Google Sheets 기반 i18n 자동화",
           description:
-            "Google 스프레드시트를 단일 진실 공급원으로 삼아 i18n 번역 파일을 자동 생성. 서비스 계정 인증, 점 표기 Key의 중첩 객체 deep merge, :param → {param} 변환, 언어별 파일 자동 생성을 처리하는 재사용 모듈(I18nBuilderFromSheets) 개발.",
+            "Google 스프레드시트에서 번역을 관리하며 i18n 파일을 자동 생성. 서비스 계정 인증, 점 표기 Key의 중첩 객체 deep merge, :param → {param} 변환, 언어별 파일 자동 생성을 처리하는 재사용 모듈(I18nBuilderFromSheets) 개발.",
           tech: ["Google Sheets API", "Node.js", "Vue CLI", "PHP Laravel", "lodash"],
           detailLink: "/projects/google-i18n",
         },
